@@ -34,3 +34,37 @@ H_2 = H_1 + Delta_H_12
 print("H2 = ", format(H_2, ".3f"))
 H_3 = H_2 + Delta_H_23
 print("H3 = ", format(H_3, ".3f"))
+
+# Data table code block
+
+print("Point ID Point ID Delta H")
+print("-----------------------------------------")
+print(idA, unknown_point1, (format(Delta_H_AB, ".3f")))
+print(
+    (unknown_point1),
+    (unknown_point2),
+    (format(Delta_H_B1, ".3f")),
+)
+print(
+    (unknown_point2),
+    (unknown_point3),
+    (format(Delta_H_12, ".3f")),
+)
+
+print(
+    (unknown_point3),
+    (unknown_point4),
+    (format(Delta_H_23, ".3f")),
+)
+
+print("-----------------------------------------")
+
+print("Point ID Elevation")
+
+print("------------------")
+
+print((unknown_point1), (format(H_B, ".3f")))
+
+print((unknown_point2), (format(H_1, ".3f")))
+print((unknown_point3), (format(H_2, ".3f")))
+print((unknown_point4), (format(H_3, ".3f")))

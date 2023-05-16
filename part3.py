@@ -50,10 +50,12 @@ Delta_H = (slope_distance_P102_1 * math.cos(verticle_angle_point1 * math.pi / 20
 # H1 Elevation
 H1 = height_P102 + Delta_H
 
-Coordinate_X = (X_coordinates_P102) + (slope_distance_P102_1 * math.cos(11.0554 * math.pi / 200))
-Coordinate_Y = (Y_coordinates_P102) + (slope_distance_P102_1 * math.sin(11.0554 * math.pi / 200))
-
-
+Coordinate_X = (X_coordinates_P102) + (
+    slope_distance_P102_1 * math.cos(11.0554 * math.pi / 200)
+)
+Coordinate_Y = (Y_coordinates_P102) + (
+    slope_distance_P102_1 * math.sin(11.0554 * math.pi / 200)
+)
 
 
 # This code block was written to create the ELECTROMETRIC TACHEOMETER CALCULATION table
@@ -65,3 +67,15 @@ print("∆H = ", format(Delta_H, ".3f"))
 print("Elevation = ", format(H1, ".3f"))
 print("Coordinate Y = ", format(Coordinate_Y, ".3f"))
 print("Coordinate X = ", format(Coordinate_X, ".3f"))
+
+print("PointID PointID Hor. Dist. Delta H Elevation Coord .(Y) Coord .(X)")
+print("------------------------------------------------------------------")
+print(
+    (stationary_traverse_ID),
+    (point_ID_detail_point),
+    (format(slope_distance_P102_1, ".3f")),
+    (format(Delta_H, ".3f")),
+    (format(H1, ".3f")),
+    (format(Coordinate_Y, ".3f")),
+    (format(Coordinate_X, ".3f")),
+)

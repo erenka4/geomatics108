@@ -116,3 +116,55 @@ Y3 = Y2 + Delta_Y_23
 print("Y3 = ", format(Y3, ".2f"))
 X3 = X2 + Delta_X_23
 print("X3 = ", format(X3, ".2f"))
+
+
+# Data table code block
+
+print("Point ID Point ID Azimuth Delta Y Delta X")
+print("-----------------------------------------")
+print(point_id_A, point_id_B, (format(azimuth_A_B, ".4f")))
+print(
+    (point_id_B),
+    (point_id_1),
+    (format(azimuth_B_1, ".4f")),
+    (format(Delta_Y_B1, ".2f")),
+    (format(Delta_X_B1, ".2f")),
+)
+print(
+    (point_id_1),
+    (point_id_2),
+    (format(azimuth_1_2, ".4f")),
+    (format(Delta_Y_12, ".2f")),
+    (format(Delta_X_12, ".2f")),
+)
+
+print(
+    (point_id_2),
+    (point_id_3),
+    (format(azimuth_2_3, ".4f")),
+    (format(Delta_Y_23, ".2f")),
+    (format(Delta_X_23, ".2f")),
+)
+
+print("-----------------------------------------")
+
+print("Point ID Coordinate (Y) Coordinate (X)")
+
+print("--------------------------------------")
+
+print(
+    (point_id_1),
+    (format(Y1, ".2f")),
+    (format(X1, ".2f")),
+)
+
+print(
+    (point_id_2),
+    (format(Y2, ".2f")),
+    (format(X2, ".2f")),
+)
+print(
+    (point_id_3),
+    (format(Y3, ".2f")),
+    (format(X3, ".2f")),
+)
