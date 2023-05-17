@@ -120,8 +120,12 @@ print("X3 = ", format(X3, ".2f"))
 
 # Data table code block
 
-print("Point ID Point ID Azimuth Delta Y Delta X")
 print("-----------------------------------------")
+
+print("Point ID Point ID Azimuth Delta Y Delta X")
+
+print("-----------------------------------------")
+
 print(point_id_A, point_id_B, (format(azimuth_A_B, ".4f")))
 print(
     (point_id_B),
